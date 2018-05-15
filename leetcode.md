@@ -47,6 +47,7 @@ public:
 #### `unordered_map`
 内部实现了哈希表，查找速度快。
 - 查找元素是否存在
+
     若有 `unordered_map<int, int> mapping` ， 查找 `x` 是否在 `mapping` 中
     - 方法1： 若存在 `mapping.find(x) != mapping.end()`
     - 方法2： 若存在 `mapping.count(x) != 0`
