@@ -1,6 +1,6 @@
 # Hash 表
 
-##1. Two Sum
+## 1. Two Sum
 
 ### 问题描述
 
@@ -216,7 +216,7 @@ A solution set is:
 ### 分析
 
 - 先排序，然后左右夹逼，复杂度 $O(n^3)$。
-- 可以用一个 hash 表先缓存两个数的和，最终复杂度 $O(n^3)​$。
+- 可以用一个 hash 表先缓存两个数的和，最终复杂度 $O(n^3)$。
 
 ### C++ 代码
 
@@ -233,7 +233,7 @@ public:
         sort(nums.begin(), nums.end());
         
         for (int p = 0; p < nums.size() - 3; p++) {
-        	for (int i = p + 1; i < nums.size() - 2; i++) {
+            for (int i = p + 1; i < nums.size() - 2; i++) {
                 int tgt = target - nums[p] - nums[i];
                 int j = i + 1, k = nums.size() - 1;
                 while (j < k) {
