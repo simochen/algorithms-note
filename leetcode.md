@@ -9,7 +9,8 @@ Given nums = [2, 7, 11, 15], target = 9,
 Because nums[0] + nums[1] = 2 + 7 = 9,return [0, 1].
 ```
 ### 分析
-- 方法1：暴力，复杂度 O(n2)，会超时- 方法2：hash. 用一个哈希表，存储每个数对应的下标，复杂度 O(n)
+- 方法1：暴力，复杂度 O(n2)，会超时
+- 方法2：hash. 用一个哈希表，存储每个数对应的下标，复杂度 O(n)
 ### C++ 代码
 ```c++
 // Time: O(n)
@@ -46,7 +47,8 @@ public:
 #### `unordered_map`
  内部实现了哈希表，查找速度快。
 - 查找元素是否存在
-  若有 `unordered_map<int, int> mapping` ， 查找 `x` 是否在 `mapping` 中
+  若有 `unordered_map<int, int> mapping` ， 查找 `x` 是否在 `mapping` 中
+  
   - 方法1： 若存在 `mapping.find(x) != mapping.end()`
   - 方法2： 若存在 `mapping.count(x) != 0`
 
