@@ -58,16 +58,53 @@ public:
 
 ### 补充
 
+#### `map`
+
+内部建立一棵红黑树（一种非严格意义上的平衡二叉树），这棵树具有对数据（`key` 值）自动排序的功能，所以在 `map` 内部所有的数据都是有序的。
+
+- 查找 `map.find()`
+
+  根据 `key` 值查找记录，复杂度为 logn。`find(key)` 函数返回一个迭代器指向键为 `key` 的元素，如果没找到就返回指向 map 尾部的迭代器（`map.end()`）。
+
+- 删除 `map.erase()`
+
+  根据 `key` 值删除记录。
+
+- `map.begin()`，`map.end()`  返回指向 map 头部和尾部的迭代器
+
+- `map.size()` 返回 map 中元素的个数
+
+- `map.count()` 返回指定元素出现的次数
+
+- `map.empty()` 如果 map 为空则返回 true
+
+- `map.clear()` 删除所有元素
+
+- `map[]`，`map.at()` 访问元素
+
+- `map.insert()` 插入元素
+
+  通过 `make_pair` 函数构造 `(k,v)` 键值对，再通过 `insert` 函数按照 `k` 将 `v` 插入到 `map` 中。
+
+- `map.find()` 查找元素
+
+  根据 `key` 值查找记录，查找复杂度为 O(logn)。`find(key)` 函数返回一个迭代器指向键为 `key` 的元素，如果没找到就返回指向 map 尾部的迭代器（`map.end()`）。
+
+- `map.erase()` 删除元素
+
+  根据 `key` 值删除记录。
+
+
 #### `unordered_map`
 
- 内部实现了哈希表，查找速度快。
+ 内部实现了哈希表，查找速度快，查找复杂度为 O(1)。不会根据 `key` 的大小进行排序。遍历顺序与创建该容器时输入元素的顺序不一定一致。
 
 - 查找元素是否存在
 
-  若有 `unordered_map<int, int> mapping` ， 查找 `x` 是否在 `mapping` 中
+  若有 `unordered_map<int, int> lookup` ， 查找 `x` 是否在 `lookup` 中
 
-  - 方法1： 若存在 `mapping.find(x) != mapping.end()`
-  - 方法2： 若存在 `mapping.count(x) != 0`
+  - 方法1： 若存在 `lookup.find(x) != lookup.end()`
+  - 方法2： 若存在 `lookup.count(x) != 0`
 
 # 数组
 
@@ -121,10 +158,7 @@ public:
                 if (sum > target) --k;
                 else if (sum < target) ++j;
                 else {
-                    vector<int> triplet(3, 0);
-                    triplet[0] = nums[i];
-                    triplet[1] = nums[j];
-                    triplet[2] = nums[k];
+                    vector<int> triplet = {nums[i], nums[j], nums[k]};
                     result.push_back(triplet);
                     while (j < k && nums[j] == triplet[1]) ++j; // 跳过重复的数
                     while (j < k && nums[k] == triplet[2]) --k;
@@ -216,7 +250,7 @@ A solution set is:
 ### 分析
 
 - 先排序，然后左右夹逼，复杂度 $O(n^3)$。
-- 可以用一个 hash 表先缓存两个数的和，最终复杂度 $O(n^3)$。
+- 可以用一个 hash 表先缓存两个数的和，最终复杂度 $O(n^2)$。
 
 ### C++ 代码
 
@@ -241,11 +275,7 @@ public:
                     if (sum > tgt) --k;
                     else if (sum < tgt) ++j;
                     else {
-                        vector<int> quadruplet(4, 0);
-                        quadruplet[0] = nums[p];
-                        quadruplet[1] = nums[i];
-                        quadruplet[2] = nums[j];
-                        quadruplet[3] = nums[k];
+                        vector<int> quadruplet = {nums[p], nums[i], nums[j], nums[k]};
                         result.push_back(quadruplet);
                         while (j < k && nums[j] == quadruplet[2]) ++j; // 跳过重复的数
                         while (j < k && nums[k] == quadruplet[3]) --k;
@@ -258,5 +288,50 @@ public:
         return result;
     }
 };
+
+// Time: O(n^2)
+// Space: O(n^2)
+// 先用一个 hash 表缓存两个数的和
+// 实际运行时间比方法1长，由于存在重复
+class Solution {
+public:
+    vector<vector<int>> fourSum(vector<int>& nums, int target) {
+        vector<vector<int>> result;
+        if (nums.size() < 4) return result;
+        // Make nums in increasing order. Time: O(nlogn)
+        sort(nums.begin(), nums.end());
+        
+        unordered_multimap<int, pair<int, int>> cache;
+        for (int i = 0; i < nums.size() - 1; i++)
+            for (int j = i + 1; j < nums.size(); j++)
+                cache.insert(make_pair(nums[i] + nums[j], make_pair(i, j)));
+        
+        for (auto i = cache.begin(); i != cache.end(); ++i) {
+            //while (i != cache.end() && !cache.count(target - i->first)) ++i;
+            auto range = cache.equal_range(target - i->first);
+            auto a = i->second.first;
+            auto b = i->second.second;
+            for (auto j = range.first; j != range.second; ++j) {
+                auto c = j->second.first;
+                auto d = j->second.second;
+                if (a != c && a != d && b != c && b != d) {
+                    vector<int> vec = {nums[a], nums[b], nums[c], nums[d]};
+                    sort(vec.begin(), vec.end());
+                    result.push_back(vec);
+                }
+            }
+        }
+        sort(result.begin(), result.end());
+        result.erase(unique(result.begin(), result.end()), result.end());
+        return result;
+    }
+};
 ```
 
+### 补充
+
+#### `multimap`
+
+`map` 只能实现一对一的映射，重复的键会被覆盖；而 `multimap` 能够实现一对多的存储方式，允许重复键。
+
+`equal_range` 是 C++ STL 中的一种二分查找算法（在 `map`， `unordered_map`， `multimap`， `unordered_multimap`中均有实现），试图在已排序的 [first, last) 中寻找value，它返回 `pair(i,j)`，其中 i 是在不破坏次序的前提下，value 可插入的第一个位置 (lower_bound)， j 是在不破坏次序的前提下，value 可插入的最后一个位置 (upper_bound) 。因此，[i, j) 内的每个元素都等于 value，而且 [i, j) 是 [first, last) 中符合此性质的最大子区间。
