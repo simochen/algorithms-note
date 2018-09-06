@@ -1,6 +1,6 @@
-# Time:   O(n^2)
+# Time:   O(m*n)
 # lookup: O(1)
-# Space:  O(n^2)
+# Space:  O(m*n)
 class NumMatrix:
 
     def __init__(self, matrix):

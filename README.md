@@ -46,23 +46,23 @@
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note|
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|-----|
 |010| [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) |  | O(m * n) | O(n) | Hard |||
-|053| [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)|| O(n)     | O(1)         | Medium         |||
-|062| [Unique Paths](https://leetcode.com/problems/unique-paths/)    |  | O(m * n)      | O(m + n)   | Medium         |||
-|063| [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/) |  |  O(m * n) | O(m + n)   | Medium         |||
-|064| [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)|  | O(m * n) | O(m + n)     | Medium         |||
+|053| [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)|[Python](./Python/maximum-subarray.py)| O(n)     | O(1)         | Easy         |||
+|062| [Unique Paths](https://leetcode.com/problems/unique-paths/)    |  | O(m * n)      | O(m+n)   | Medium         |||
+|063| [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/) |  |  O(m * n) | O(m+n)   | Medium         |||
+|064| [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)|  | O(m * n) | O(m+n)     | Medium         |||
 |070| [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)| [Python](./Python/climbing-stairs.py) | O(n)    | O(1)          | Easy           |||
-|072| [Edit Distance](https://leetcode.com/problems/edit-distance/)|| O(m * n)      | O(m + n)      | Hard           |||
+|072| [Edit Distance](https://leetcode.com/problems/edit-distance/)|| O(m * n)      | O(m+n)      | Hard           |||
 |087| [Scramble String](https://leetcode.com/problems/scramble-string/) |  | O(n^4) | O(n^3)        | Hard           |||
 |091| [Decode Ways](https://leetcode.com/problems/decode-ways/)   |  | O(n)          | O(1)          | Medium         |||
 |096| [Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/) |  | O(n)      | O(1)         | Medium         || Math|
-|097| [Interleaving String](https://leetcode.com/problems/interleaving-string/)|| O(m * n) | O(m + n) | Hard         |||
+|097| [Interleaving String](https://leetcode.com/problems/interleaving-string/)|| O(m * n) | O(m+n) | Hard         |||
 |115| [Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/)|| O(n^2) | O(n) | Hard           |||
 |120| [Triangle](https://leetcode.com/problems/triangle/)       |    | O(m * n)      | O(n)         | Medium         |||
 |123| [Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/) |  | O(n) | O(1) | Hard |||
 |132| [Palindrome Partitioning II](https://leetcode.com/problems/palindrome-partitioning-ii/) |  | O(n^2) | O(n^2) | Hard |||
 |139| [Word Break](https://leetcode.com/problems/word-break/)     |  |  O(n * l^2)         | O(n)       | Medium         |||
 |152| [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)|| O(n) | O(1) | Medium     |||
-|174| [Dungeon Game](https://leetcode.com/problems/dungeon-game/)  |                                                              | O(m * n)     | O(m + n)      | Hard           |||
+|174| [Dungeon Game](https://leetcode.com/problems/dungeon-game/)  |                                                              | O(m * n)     | O(m+n)      | Hard           |||
 |188| [Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/)|  | O(k * n) | O(k) | Hard |||
 |198| [House Robber](https://leetcode.com/problems/house-robber/)| [Python](./Python/house-robber.py) | O(n)          | O(1)          | Easy           |||
 |213| [House Robber II](https://leetcode.com/problems/house-robber-ii/)| [Python](./Python/house-robber-ii.py) | O(n)          | O(1)          | Medium           |||
@@ -72,13 +72,13 @@
 |276| [Paint Fence](https://leetcode.com/problems/paint-fence/) |  | O(n)| O(1)| Easy |📖||
 |279| [Perfect Squares](https://leetcode.com/problems/perfect-squares/)|  | O(n * sqrt(n))         | O(n)          | Medium           ||  Hash |
 |303| [Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/)| [Python](./Python/range-sum-query-immutable.py) | ctor: O(n), lookup: O(1)          | O(n)          | Easy           |||
-|304| [Range Sum Query 2D - Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable/)| [Python](./Python/range-sum-query-2d-immutable.py) | ctor: O(m * n), lookup: O(1)          | O(m * n)          | Medium           |||
+|304| [Range Sum Query 2D - Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable/)| [Python](./Python/range-sum-query-2d-immutable.py) | ctor: O(m*n), lookup: O(1)          | O(m*n)          | Medium           |||
 |309| [Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/) |  | O(n) | O(1) | Medium |||
 |312| [Burst Balloons](https://leetcode.com/problems/burst-balloons/) |  | O(n^3) | O(n^2) | Hard |||
 |322| [Coin Change](https://leetcode.com/problems/coin-change/) |  | O(n * k) | O(k) | Medium |||
 |351| [Android Unlock Patterns](https://leetcode.com/problems/android-unlock-patterns/) |  | O(9^2 * 2^9) | O(9 * 2^9) | Medium | 📖 | Backtracking |
 |357| [Count Numbers with Unique Digits](https://leetcode.com/problems/count-numbers-with-unique-digits/) |  | O(n) | O(1) | Medium || Backtracking, Math |
-|361| [Bomb Enemy](https://leetcode.com/problems/bomb-enemy/) |  | O(m * n) | O(m * n) | Medium | 📖 | |
+|361| [Bomb Enemy](https://leetcode.com/problems/bomb-enemy/) |  | O(m * n) | O(m*n) | Medium | 📖 | |
 |368| [Largest Divisible Subset](https://leetcode.com/problems/largest-divisible-subset/) |  | O(n^2) | O(n) | Medium | | |
 |375| [Guess Number Higher or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii/)|    | O(n^2)          | O(n^2)          | Medium         | ||
 |377| [Combination Sum IV](https://leetcode.com/problems/combination-sum-iv/)|    | O(nlogn + n * t)          | O(t)          | Medium         | ||
@@ -91,7 +91,7 @@
 |467 | [Unique Substrings in Wraparound String](https://leetcode.com/problems/unique-substrings-in-wraparound-string/) |  | O(n) | O(1) | Medium |||
 |471 | [Encode String with Shortest Length](https://leetcode.com/problems/encode-string-with-shortest-length/) |  | O(n^3) on average | O(n^2) | Medium |📖||
 |472 | [Concatenated Words](https://leetcode.com/problems/concatenated-words/) |  | O(n * l^2) | O(n * l) | Medium |||
-|474 | [Ones and Zeroes](https://leetcode.com/problems/ones-and-zeroes/) |  | O(s * m * n) | O(m * n) | Medium |||
+|474 | [Ones and Zeroes](https://leetcode.com/problems/ones-and-zeroes/) |  | O(s * m * n) | O(m*n) | Medium |||
 |486 | [Predict the Winner](https://leetcode.com/problems/predict-the-winner/) |  | O(n^2) | O(n) | Medium | | |
 |514 | [Freedom Trail](https://leetcode.com/problems/freedom-trail/) |  | O(k) ~ O(k * r^2) | O(r) | Hard |||
 |516 | [Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/) |  | O(n^2) | O(n) | Medium |||
@@ -99,7 +99,7 @@
 |552 | [Student Attendance Record II](https://leetcode.com/problems/student-attendance-record-ii/) |  | O(n) | O(1) | Hard |||
 |562 | [Longest Line of Consecutive One in Matrix](https://leetcode.com/problems/longest-line-of-consecutive-one-in-matrix/) |  | O(m * n) | O(n) | Medium |📖||
 |568 | [Maximum Vacation Days](https://leetcode.com/problems/maximum-vacation-days/) |  | O(n^2 * k) | O(k) | Hard |📖||
-|576 | [Out of Boundary Paths](https://leetcode.com/problems/out-of-boundary-paths/) |  | O(N * m * n) | O(m * n) | Medium |||
+|576 | [Out of Boundary Paths](https://leetcode.com/problems/out-of-boundary-paths/) |  | O(N * m * n) | O(m*n) | Medium |||
 |583 | [Delete Operation for Two Strings](https://leetcode.com/problems/delete-operation-for-two-strings/) |  | O(m * n) | O(n) | Medium |||
 |600 | [Non-negative Integers without Consecutive Ones](https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/) |  | O(1) | O(1) | Hard |||
 |629 | [K Inverse Pairs Array](https://leetcode.com/problems/k-inverse-pairs-array/) |  | O(n * k) | O(k) | Hard |||
