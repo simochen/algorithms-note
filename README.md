@@ -48,8 +48,8 @@
 |010| [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) |  | O(m * n) | O(n) | Hard |||
 |053| [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)|[Python](./Python/maximum-subarray.py)| O(n)     | O(1)         | Easy         |||
 |062| [Unique Paths](https://leetcode.com/problems/unique-paths/)    | [Python](./Python/unique-paths.py) | O(m * n)      | O(m)   | Medium         |||
-|063| [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/) | [Python](./Python/unique-paths-ii.py) |  O(m * n) | O(m+n)   | Medium         |||
-|064| [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)|  | O(m * n) | O(m+n)     | Medium         |||
+|063| [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/) | [Python](./Python/unique-paths-ii.py) |  O(m * n) | O(m)  | Medium         |||
+|064| [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)| [Python](./Python/minimum-path-sum.py) | O(m * n) | O(m)     | Medium         |||
 |070| [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)| [Python](./Python/climbing-stairs.py) | O(n)    | O(1)          | Easy           |||
 |072| [Edit Distance](https://leetcode.com/problems/edit-distance/)|| O(m * n)      | O(m+n)      | Hard           |||
 |087| [Scramble String](https://leetcode.com/problems/scramble-string/) |  | O(n^4) | O(n^3)        | Hard           |||
