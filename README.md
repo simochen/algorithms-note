@@ -1,6 +1,7 @@
 # Algorithms-Note
 
 - [Sort](https://github.com/simochen/algorithms-note#sort)
+- [Bit Manipulation](https://github.com/simochen/algorithms-note#bit-manipulation)
 - [Array](https://github.com/simochen/algorithms-note#array)
 - [Hash Table](https://github.com/simochen/algorithms-note#hash-table)
 - [Dynamic Programming](https://github.com/simochen/algorithms-note#dynamic-programming)
@@ -23,6 +24,33 @@
 
 [Click here](https://github.com/simochen/algorithms-note/blob/master/sort.md) for details.
 
+## Bit Manipulation
+|  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note|
+|-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|-----|
+|136 | [Single Number](https://leetcode.com/problems/single-number/) | [Python](./Python/single-number.py) | O(n)       | O(1)          | Easy         |||
+|137 | [Single Number II](https://leetcode.com/problems/single-number-ii/) |  | O(n) | O(1)          | Medium         |||
+|190 | [Reverse Bits](https://leetcode.com/problems/reverse-bits/)  | [Python](./Python/reverse-bits.py) | O(1)        | O(1)          | Easy           |||
+|191  |[Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | [Python](./Python/number-of-1-bits.py) | O(1) | O(1)          | Easy           |||
+|201 | [Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/) |  | O(1) | O(1) | Medium |||
+|231 | [Power of Two](https://leetcode.com/problems/power-of-two/) | [Python](./Python/power-of-two.py) | O(1) | O(1) | Easy | LintCode ||
+|260 | [Single Number III](https://leetcode.com/problems/single-number-iii/) |  | O(n) | O(1)          | Medium         |||
+|268| [Missing Number](https://leetcode.com/problems/missing-number/) |   | O(n) |  O(1) | Medium         | LintCode ||
+|318| [Maximum Product of Word Lengths](https://leetcode.com/problems/maximum-product-of-word-lengths/) |   | O(n) ~ O(n^2) |  O(n) | Medium         || Bit Manipulation, Counting Sort, Pruning|
+|342 | [Power of Four](https://leetcode.com/problems/power-of-four/) | [Python](./Python/power-of-four.py) | O(1) | O(1) | Easy | ||
+|371 | [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/) | [Python](./Python/sum-of-two-integers.py) | O(1) | O(1) | Easy | LintCode ||
+|389 | [Find the Difference](https://leetcode.com/problems/find-the-difference/) | [Python](./Python/find-the-difference.py) | O(n) | O(1) | Easy | ||
+|393 | [UTF-8 Validation](https://leetcode.com/problems/utf-8-validation/) |  | O(n) | O(1) | Medium | ||
+|401 | [Binary Watch](https://leetcode.com/problems/binary-watch/) | [Python](./Python/binary-watch.py) | O(1) | O(1) | Easy | ||
+|411 | [Minimum Unique Word Abbreviation](https://leetcode.com/problems/minimum-unique-word-abbreviation/) |  | O(2^n) | O(n) | Hard | 📖 ||
+|421 | [Maximum XOR of Two Numbers in an Array](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/) |  | O(n) | O(1) | Medium |||
+|461 | [Hamming Distance](https://leetcode.com/problems/hamming-distance/) | [Python](./Python/hamming-distance.py) | O(1) | O(1) | Easy |||
+|462 | [Minimum Moves to Equal Array Elements II](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/) |  | O(n)  on average | O(1) | Medium |||
+|477 | [Total Hamming Distance](https://leetcode.com/problems/total-hamming-distance/) |  | O(n) | O(1) | Medium |||
+|645 | [Set Mismatch](https://leetcode.com/problems/set-mismatch/) | [Python](./Python/set-mismatch.py) | O(n) | O(1) | Easy |||
+|693 | [Binary Number with Alternating Bits](https://leetcode.com/problems/binary-number-with-alternating-bits/) | [Python](./Python/binary-number-with-alternating-bits.py) | O(log(n)) | O(1) | Easy |||
+|762 | [Prime Number of Set Bits in Binary Representation](https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/) | [Python](./Python/prime-number-of-set-bits-in-binary-representation.py) | O(1) | O(1) | Easy |||
+|868 | [Binary Gap](https://leetcode.com/problems/binary-gap/) | [Python](./Python/binary-gap.py) | O(1) | O(1) | Easy |||
+|898 | [Bitwise ORs of Subarrays](https://leetcode.com/problems/bitwise-ors-of-subarrays/) |  | O(n) | O(1) | Medium |||
 
 
 ## Array
@@ -53,8 +81,8 @@
 |070| [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)| [Python](./Python/climbing-stairs.py) | O(n)    | O(1)          | Easy           |||
 |072| [Edit Distance](https://leetcode.com/problems/edit-distance/)|| O(m * n)      | O(m+n)      | Hard           |||
 |087| [Scramble String](https://leetcode.com/problems/scramble-string/) |  | O(n^4) | O(n^3)        | Hard           |||
-|091| [Decode Ways](https://leetcode.com/problems/decode-ways/)   |  | O(n)          | O(1)          | Medium         |||
-|096| [Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/) |  | O(n)      | O(1)         | Medium         || Math|
+|091| [Decode Ways](https://leetcode.com/problems/decode-ways/)   | [Python](./Python/decode-ways.py) | O(n)          | O(1)          | Medium         |||
+|096| [Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/) | [Python](./Python/unique-binary-search-trees.py) | O(n)      | O(1)         | Medium         || Math|
 |097| [Interleaving String](https://leetcode.com/problems/interleaving-string/)|| O(m * n) | O(m+n) | Hard         |||
 |115| [Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/)|| O(n^2) | O(n) | Hard           |||
 |120| [Triangle](https://leetcode.com/problems/triangle/)       |    | O(m * n)      | O(n)         | Medium         |||
