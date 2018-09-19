@@ -3,6 +3,7 @@
 - [Sort](https://github.com/simochen/algorithms-note#sort)
 - [Bit Manipulation](https://github.com/simochen/algorithms-note#bit-manipulation)
 - [Array](https://github.com/simochen/algorithms-note#array)
+- [Linked List](https://github.com/simochen/algorithms-note#linked-list)
 - [Hash Table](https://github.com/simochen/algorithms-note#hash-table)
 - [Dynamic Programming](https://github.com/simochen/algorithms-note#dynamic-programming)
 
@@ -24,7 +25,10 @@
 
 [Click here](https://github.com/simochen/algorithms-note/blob/master/sort.md) for details.
 
+
+
 ## Bit Manipulation
+
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note|
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|-----|
 |136 | [Single Number](https://leetcode.com/problems/single-number/) | [Python](./Python/single-number.py) | O(n)       | O(1)          | Easy         |||
@@ -60,6 +64,32 @@
 |015 | [3 Sum](https://leetcode.com/problems/3sum/)         | [C++](./C++/3sum.cpp) | O(n^2)        | O(1)          | Medium         || Two Pointers|
 |016 | [3 Sum Closest](https://leetcode.com/problems/3sum-closest/) | [C++](./C++/3sum-closest.cpp) | O(n^2)       | O(1)          | Medium         || Two Pointers|
 |018| [4 Sum](https://leetcode.com/problems/4sum/)         | [C++](./C++/4sum.cpp) | O(n^3)    | O(1)    | Medium         || Two Pointers|
+
+
+
+## Linked List
+|  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note|
+|-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|-----|
+|002| [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) |  | O(n)   | O(1)          | Medium         |||
+|021| [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)| [Python](./Python/merge-two-sorted-lists.py) | O(n) | O(1) | Easy         |||
+|023| [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) |  | O(nlogk)| O(1)| Hard          | | Heap, Divide and Conquer|
+|024| [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)| [Python](./Python/swap-nodes-in-pairs.py)   | O(n)          | O(1)          | Easy         |||
+|025| [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)|  | O(n)       | O(1)         | Hard         |||
+|061| [Rotate List](https://leetcode.com/problems/rotate-list/)| [Python](./Python/rotate-list.py)   | O(n)          | O(1)          | Medium         |||
+|082| [Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/)| [Python](./Python/remove-duplicates-from-sorted-list-ii.py) | O(n)       | O(1)         | Medium         |||
+|083| [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)| [Python](./Python/remove-duplicates-from-sorted-list.py) | O(n)       | O(1)         | Easy           |||
+|092| [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/)| [Python](./Python/reverse-linked-list-ii.py) | O(n)       | O(1)         | Medium         |||
+|138| [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/) |  | O(n)   | O(1)          | Hard         |||
+|160| [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)|  [Python](./Python/intersection-of-two-linked-lists.py) | O(m +n) | O(1)         | Easy           |||
+|203| [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/)| [Python](./Python/remove-linked-list-elements.py) | O(n)       | O(1)         | Easy         |||
+|206| [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)| [Python](./Python/reverse-linked-list.py) | O(n)       | O(1)         | Easy         |||
+|234| [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)| [Python](./Python/palindrome-linked-list.py) | O(n)       | O(1)         | Easy         |||
+|237| [Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)| [Python](./Python/delete-node-in-a-linked-list.py) | O(1)       | O(1)         | Easy         | LintCode ||
+|328| [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/)|  | O(n)       | O(1)         | Medium         | ||
+|369| [Plus One Linked List](https://leetcode.com/problems/plus-one-linked-list/)|  | O(n)       | O(1)         | Medium         | 📖 | Two Pointers |
+|445| [Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii/)|  | O(m +n)       | O(m + n)         | Medium         |||
+|725 | [Split Linked List in Parts](https://leetcode.com/problems/split-linked-list-in-parts/) |  | O(n + k) | O(1) | Medium |||
+|817 | [Linked List Components](https://leetcode.com/problems/linked-list-components/) |  | O(m +n) | O(m) | Medium |||
 
 
 
